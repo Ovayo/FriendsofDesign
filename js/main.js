@@ -4,10 +4,14 @@ var user = {
 	emailAddress: 'montiovayo@gmail.com',
 	age: 31,
 	children: [{
-		name: 'Ave',
+		name: 'One',
 		age: 3
 	}, {
-		name: 'Ruby',
+		name: 'Two',
+		age: 4
+	}
+	, {
+		name: 'Three',
 		age: 5
 	}]
 };
@@ -15,9 +19,9 @@ var user = {
 console.log(user.firstName); //'Ovayo'
 console.log(user.lastName);  //'Monti'
 
-console.log(user.children);         //[{name: 'Ave', age: 3}, {name: 'Ruby', age: 5}]
-console.log(user.children[0]);      //{name: 'Ave', age: 3}
-console.log(user.children[1].name); //'Ruby'
+console.log(user.children);         //[{name: 'One', age: 3}, {name: 'Two', age: 4}, {name: 'Three', age: 5}]
+console.log(user.children[0]);      //{name: 'One', age: 3}
+console.log(user.children[1].name); //'Two'
 
 console.log(user.firstName + user.lastName); //'OvayoMonti'
 
@@ -27,6 +31,7 @@ console.log(`${user.firstName} ${user.lastName}`); //'Ovayo Monti'
 console.log(1 + 1);   //2
 console.log('1 + 1'); //'1 + 1'
 console.log(`${0 + 1} + ${101 - 100}`); //'1 + 1'
+
 
 user.name = user.firstName + ' ' + user.lastName;
 
