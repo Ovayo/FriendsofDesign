@@ -85,10 +85,40 @@ if (user.age >= AgeMax) {
 
 alert(totalPrice + ' a saving of ' + (price - totalPrice));
 
-totalPrice = totalPrice - ( user.children.length * taxBreakOnChildren ) 
+totalPrice = totalPrice - ( user.children.length * taxBreakOnChildren )
 
 alert(totalPrice + ' a saving of ' + (price - totalPrice));
 
 // if (user.children.length > 0) {
 // 	totalPrice = totalPrice - taxBreakOnChildren;
+// }
+
+// if(user.lastName == 'Monti') {
+// 	alert('Xhosa');
+// } else if ( user.lastName == 'Mkhiza') {
+// 	alert('Youre High');
+// } else {
+// 	alert('Sober');
+// }
+
+function lang(xhosa) {
+	if(user.lastName == 'Monti') {
+		alert('Molo');
+	} else if ( user.lastName == 'Mkhize') {
+		alert('Sawbona');
+	} else {
+		alert('Bye');
+	}
+}
+// switch(user.age) {
+//   case 30:
+//   	alert('30');
+//     break;
+//   case 31:
+//   	alert('31');
+//     break;
+//   case 35:
+//   	alert('35');
+//     break;
+//   default:
 // }
