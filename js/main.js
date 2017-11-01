@@ -4,24 +4,27 @@ var user = {
 	emailAddress: 'montiovayo@gmail.com',
 	age: 31,
 	children: [{
-		name: 'One',
+		name: 'Ave',
+		childlastName: 'Monti',
 		age: 3
 	}, {
-		name: 'Two',
-		age: 4
+		name: 'Aphelele',
+		childlastName: 'Monti',
+		age: 23
 	}
 	, {
-		name: 'Three',
-		age: 5
+		name: 'Aviwe',
+		childlastName: 'Monti',
+		age: 29
 	}]
 };
 
 console.log(user.firstName); //'Ovayo'
 console.log(user.lastName);  //'Monti'
 
-console.log(user.children);         //[{name: 'One', age: 3}, {name: 'Two', age: 4}, {name: 'Three', age: 5}]
-console.log(user.children[0]);      //{name: 'One', age: 3}
-console.log(user.children[1].name); //'Two'
+console.log(user.children);         //[{name: 'Ave', age: 3}, {name: 'Aphelele', age: 23}, {name: 'Aviwe', age: 29}]
+console.log(user.children[0]);      //{name: 'Ave', age: 3}
+console.log(user.children[1].name); //'Aphelele'
 
 console.log(user.firstName + user.lastName); //'OvayoMonti'
 
@@ -32,7 +35,7 @@ console.log(1 + 1);   //2
 console.log('1 + 1'); //'1 + 1'
 console.log(`${0 + 1} + ${101 - 100}`); //'1 + 1'
 
-
+user.childName = user.children.name + ' ' + user.children.childlastName;
 user.name = user.firstName + ' ' + user.lastName;
 
 function greetUser(firstName) {
@@ -101,24 +104,58 @@ alert(totalPrice + ' a saving of ' + (price - totalPrice));
 // 	alert('Sober');
 // }
 
-function lang(xhosa) {
+function lang(eng) {
 	if(user.lastName == 'Monti') {
-		alert('Molo');
+		alert('Hi');
 	} else if ( user.lastName == 'Mkhize') {
-		alert('Sawbona');
+		alert('Hello');
 	} else {
 		alert('Bye');
 	}
 }
-// switch(user.age) {
-//   case 30:
-//   	alert('30');
-//     break;
-//   case 31:
-//   	alert('31');
-//     break;
-//   case 35:
-//   	alert('35');
-//     break;
-//   default:
+
+// switch statement session
+switch(user.age) {
+  case 30:
+  	console.log('30');
+    break;
+  case 31:
+  	console.log('31');
+    break;
+  case 35:
+  	console.log('35');
+    break;
+  default:
+  	console.log('Not 30, 31 or 35')
+}
+
+alert('About to break')
+
+//While Loops Session
+var siblings = [
+	'Ave',
+	'Aphelele',
+	'Aviwe'
+];
+
+// var count = 0;
+// while(count < invoiceItems) {
+// 	console.log(count);
+
+// 	// currentValue = currentValue + 1
+// 	// currentValue += 1
+// 	count++
 // }
+
+for(i=0;i<siblings.length;i++) {
+	console.log( siblings + ' are ' + user.name  + "'s" + ' Kids ' );
+}
+
+
+// for(i=0;i<user.children.length;i++) {
+// 	console.log( user.children[i].name + ' are ' + user.name  + "'s" + ' Kids ' );
+// }
+
+
+
+
